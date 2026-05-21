@@ -65,13 +65,13 @@
 }
 .footer-form {
   position: relative;
-  width: 453px;
+  width: 455px;
   height: 80px;
 }
 .footer-label {
   display: flex;
+  margin-bottom: 16px;
   flex-direction: column;
-  gap: 16px;
   flex-wrap: nowrap;
   font-family: "Roboto", serif;
   font-weight: 500;
@@ -80,17 +80,26 @@
   letter-spacing: 0.02em;
   color: #ffffff;
 }
+.footer-test {
+  display: flex;
+}
+
 .footer-input {
   color: #ffffff;
+  outline: none;
   width: 264px;
   height: 40px;
-  position: absolute;
   bottom: 0;
   left: 0;
-  border: 1px solid #31d0aa;
+  border: 1px solid #ffffff;
   background-color: transparent;
   border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.footer-input:focus {
+  border-color: #31d0aa;
+}
+
 .footer-input::placeholder {
   color: #ffffff;
   font-family: "Roboto", serif;
@@ -100,21 +109,13 @@
   letter-spacing: 0.04em;
   padding: 13px 212px 13px 16px;
 }
-.footer-input:placeholder-shown {
-  border-color: #ffffff;
-}
-.footer-input:focus::placeholder {
-}
 
 .footer-button {
-  position: absolute;
-  bottom: 0;
-  right: 0;
   background-color: #4d5ae5;
-  width: 165px;
-  height: 40px;
+  position: relative;
   border-radius: 4px;
-  padding: 8px 24px;
+  padding: 8px 64px 8px 24px;
+  margin-left: 24px;
   max-width: 165px;
   color: #ffffff;
   font-family: "Roboto", serif;
@@ -126,4 +127,12 @@
 }
 .footer-button:hover {
   background-color: #31d0aa;
+}
+.image-send {
+  right: 24px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: #ffffff;
+  background-color:;
 }

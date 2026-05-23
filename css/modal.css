@@ -61,7 +61,8 @@
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close-button:hover .close {
+.close-button:hover .close,
+.close-button:focus .close {
   fill: #ffffff;
 }
 .modal-title {
@@ -94,6 +95,7 @@
   height: 40px;
   width: 100%;
   font-size: 18px;
+  background-color: #fcfcfc;
   color: #2e2f42;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -123,6 +125,7 @@
   height: 120px;
   margin-bottom: 16px;
   font-size: 12px;
+  line-height: 117%;
   color: #2e2f42;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -152,6 +155,7 @@
 
 .lable-check {
   display: flex;
+  margin-bottom: 24px;
 }
 .custom-checkbox {
   display: flex;
@@ -186,10 +190,9 @@
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-left: 8px;
-  margin-bottom: 24px;
 }
 .policy-link {
-  line-height: 133%;
+  line-height: 117%;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
